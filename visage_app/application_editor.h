@@ -22,15 +22,19 @@
 #pragma once
 
 #include "visage_ui/frame.h"
+#include <cmath>
 
 #include <set>
+
 
 namespace visage {
   class ApplicationEditor;
   class Canvas;
+  class Frame;
   class Window;
   class WindowEventHandler;
   class ClientWindowDecoration;
+  using std::round;
 
   class TopLevelFrame : public Frame {
   public:
